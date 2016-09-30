@@ -1,0 +1,29 @@
+<div class="MyMeds-Header">
+    <h1>My Meds Page</h1>
+    <!-- <h2>Save your medications here for easy access!</h2> -->
+</div>
+
+<div ng-show="beforeMeds">
+    <h1 style="color:grey;text-align:center;">Go add some medications
+     to your Meds page by clicking the star at
+      the discount card page.
+   </h1>
+</div>
+
+<div ng-show="showMeds" class="medication" ng-repeat="med in myMeds track by $index">
+    <i ng-click="openRemoveStarAlert($index)" class="fa fa-star" aria-hidden="true"></i>
+    <img src="{{med.img}}" alt="" />
+    <p class="name-box">
+        <big style="font-size:28px;">{{med.name}}</big> <br> Discount price: ${{med.price}} <br> Pharmacy: {{med.pharmacy}} <br> Form: {{med.form}} <br> Strength: {{med.strength}} <br> Quantity: {{med.quantity}}
+
+    </p>
+    <button class="btn">Get Coupon</button>
+</div>
+
+<div ng-show="showRemoveStarAlert" class="remove-star">
+    <h3>{{removeStarString}}</h3>
+    <button ng-click="removeStaredMed()" class="btn-yes">Yes</button>
+    <button ng-click="closeRemoveStarAlert()" class="btn-yes no">No</button>
+</div>
+
+<button ng-click="toggleShowMeds()" class="btn-search">Search for a drug</button>

@@ -1,0 +1,76 @@
+<div>
+  <div style="display:flex;justify-content:space-between;">
+    <div class="pill-id">
+      <p><big>Identify your pill</big></p>
+      <form action="index.html" method="post">
+        <div>
+          <big>Name:</big>
+          <input placeholder="Drug name... " ng-model="pill.name" type="text" name="Name" value="">
+        </div>
+
+        <hr>
+
+        <div>
+          <big>Imprint:</big>
+          <input placeholder="Imprint on pill..." ng-model="pill.imprint" type="text" name="Imprint" value="">
+        </div>
+
+        <div>
+          <big>Shape:</big>
+          <select ng-model="pill.shape" name="Shapes">
+            <option ng-repeat="shape in shapesList track by $index" value="{{shape}}">{{shape}}</option>
+          </select>
+        </div>
+
+          <div>
+            <big>Color:</big>
+            <select ng-model="pill.color" name="Colors">
+              <option  ng-repeat="color in colorsList track by $index" value="{{color}}">{{color}}</option>
+            </select>
+          </div>
+
+          <div>
+            <big>Symbol:</big>
+            <select ng-model="pill.symbol" name="Symbols">
+              <option ng-repeat="symbol in symbolsList track by $index" value="{{symbol}}">{{symbol}}</option>
+            </select>
+          </div>
+
+          <div>
+            <big>Size:</big>
+            <select ng-model="pill.size" name="Sizes">
+              <option ng-repeat="size in sizeList track by $index" value="{{size}}">{{size}}</option>
+            </select>
+          </div>
+
+          <div>
+              <big>Score:</big>
+              <select ng-model="pill.score" name="Scores">
+                <option ng-repeat="score in scoresList track by $index" value="{{score}}">{{score}}</option>
+              </select>
+          </div>
+          <button class="clear-search" ng-click="ClearSearch()" type="button">Clear</button>
+          <button class="submit-search" ng-click="SubmitSearch(pill)" type="button">Search</button>
+      </form>
+    </div>
+
+    <div class="pill-images">
+      <p><big>Pill results {{imageCount}}</big></p>
+      <div class="pill-result" ng-show="showImageResults" ng-repeat="imgObj in pillImgResults track by $index">
+        <span>
+          <img ng-click="togglePillDetails($index)" src={{imgObj.imageUrl}} alt="" />
+        </span>
+      </div>
+    </div>
+
+    <div ng-show="showPillDetails" class="pill-details">
+      <div ng-click="ClosePillDetails()" class="close-pill-details">X</div>
+        <div class="pill-name"><big>Name: {{currentName}}</big></div>
+        <img src={{currentImg}} alt="" />
+        <div>
+          <button class="get-prices" type="button" name="button">Get Coupon Prices</button>
+        </div>
+    </div>
+
+  </div>
+</div>

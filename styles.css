@@ -1,0 +1,497 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+}
+
+header {
+    background-color: #2F84BE;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: white;
+    height: 40px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+header span {
+    position: relative;
+    top: 13px;
+    margin-left: 20%;
+}
+
+header span:nth-child(2) {
+    margin-left: 5px;
+}
+
+.icon-holder {
+    margin-left: 4.8%;
+}
+
+.icon-holder i {
+    font-size: 15px;
+    margin: 0 6px;
+}
+
+.header-two {
+    margin-bottom: 20px;
+}
+
+.header-two div {
+    position: relative;
+    top: 23px;
+    right: 20%;
+    float: right;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.header-two div a {
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+
+/**{border: 1px solid green; }*/
+
+.header-two img {
+    position: relative;
+    top: 18px;
+    left: 19%;
+    width: 14%;
+    margin: 0;
+}
+
+.MyMeds-Header {
+    width: 100%;
+    color: #fff;
+    background-image: url("./pics/Search-Background.png");
+    background-repeat: no-repeat;
+    padding: 30px 0;
+    font-family: 'Arial', Helvetica, Arial, Lucida, sans-serif;
+    margin-bottom: 10px;
+}
+
+.MyMeds-Header h1 {
+    margin: 10px 0;
+    margin-left: 18%;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.MyMeds-Header h2 {
+    margin: 10px 0;
+    margin-left: 16%;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.medication {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #2F84BE;
+    color: #2F84BE;
+    font-weight: bold;
+}
+
+.medication .name-box {
+    width: 50%;
+}
+
+.medication p big {
+    width: 100%;
+    word-break: break-all;
+}
+
+.medication i {
+    color: yellow;
+    font-size: 50px;
+    margin-top: 2%;
+}
+
+.medication i:hover {
+    font-size: 55px;
+    margin-right: -5px;
+}
+
+.medication:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.medication img {
+    border-radius: 3px;
+    position: relative;
+    top: 10px;
+    box-shadow: 1px 1px 1px 1px gray;
+    width: 10%;
+    height: 10%;
+}
+
+.btn {
+    border-color: #3B83B4;
+    background-color: #3B83B4;
+    color: white;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    height: 35px;
+    margin-top: 4%;
+    position: relative;
+    right: 5%;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+.btn-search {
+    border-color: #3B83B4;
+    background-color: #3B83B4;
+    color: white;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    border-radius: 4px;
+    padding: 6px 12px;
+    width: 30%;
+    margin-left: 35%;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.btn-search:hover {
+    color: #ffffff;
+    background-color: #47a447;
+    border-color: #398439;
+}
+
+.btn-yes {
+    border-color: #3B83B4;
+    background-color: #3B83B4;
+    color: white;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 22px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    height: 35px;
+    margin: 0 15px;
+}
+
+.btn-yes:hover {
+    border-color: #32CD32;
+    background-color: #32CD32;
+}
+
+.no:hover {
+    border-color: #FF4500;
+    background-color: #FF4500;
+}
+
+.remove-star {
+    line-height: 50px;
+    text-align: center;
+    position: fixed;
+    top: 45%;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+.remove-star h3 {
+    margin: 3px 0;
+}
+
+footer {
+    background-color: #1f1f1f;
+}
+
+.upper-footer {
+    margin-top: 50px;
+    background-color: #1a516e;
+    display: flex;
+    padding: 50px 0;
+}
+
+.upper-footer div {
+    position: relative;
+    left: 15%;
+    width: 20%;
+}
+
+.upper-footer div * {
+    display: block;
+    margin: 10px 0;
+}
+
+.upper-footer div span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.upper-footer div a {
+    color: #439DC2;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.lower-footer {
+    color: white;
+    background-color: #12374b;
+    height: 90px;
+}
+
+.lower-footer span {
+    font-size: 18px;
+    margin-left: 14%;
+    line-height: 65px;
+}
+
+.lower-footer i {
+    color: #439DC2;
+    position: relative;
+    left: 36%;
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+/*PILL ID SECTION*/
+.pill-id {
+  color: #fff;
+  background-image: url("./pics/Search-Background.png");
+  background-repeat: no-repeat;  border: 1px solid #3B83B4;
+  border-radius: 3px;
+  width:20%;
+  padding:15px;
+  margin:2% 5% 5% 5%;
+  height: auto;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.pill-id p {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.pill-id div {
+  margin: 9% 0;
+}
+.pill-id div big{
+  position: relative;
+  top: 10px;
+}
+
+input{
+  background-color: #eee;
+  border: medium none;
+  border-radius: 0;
+  -webkit-border-radius:0px;
+  -moz-border-radius:0px;
+  color: #000 !important;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select {
+  background-color: #eee;
+  color: #000 !important;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+  margin: 2px 0;
+  border-radius: 2px;
+}
+
+.pill-id select, .pill-id input {
+  float: right;
+  width:60%;
+}
+
+.submit-search {
+  border-color: #3B83B4;
+  background-color: #3B83B4;
+  color: white;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 22px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: 10px;
+  float: right;
+  margin-right: 10px;
+}
+
+.clear-search {
+  border-color: #3B83B4;
+  background-color: #3B83B4;
+  color: white;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 22px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  height: 35px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.submit-search:hover, .clear-search:hover {
+  border-color: white;
+}
+
+.pill-images {
+  background-color: whitesmoke;
+  border: 1px solid #3B83B4;
+  border-radius: 3px;
+  width:65%;
+  height:auto;
+  padding:10px;
+  margin:2% 5% 2% 0%;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.pill-images p {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid black;
+}
+
+.pill-result {
+  display: inline-block;
+  margin:0.5%;
+  padding: 0;
+  width:23.5%;
+  border-radius: 3px;
+  border: 2px solid black;
+}
+
+.pill-result img {
+  width:100%;
+  margin: 0;
+}
+
+.pill-result:hover {
+  background-color: #3B83B4;
+  border: 2px solid  white;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.pill-details {
+  z-index: 99999;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #3B83B4;
+  box-shadow: 1px 1px 1px gray;
+  border-radius: 5px;
+  width: 80%;
+  height:auto;
+  position: fixed;
+  left: 10%;
+  top:7%;
+  padding:10px;
+}
+
+.pill-name {
+  width:90%;
+  margin-left: 4%;
+  margin-right: 0;
+  padding: 0.5%;
+  color: white;
+  background-color: #3B83B4;
+  border-radius: 5px;
+}
+
+.pill-details img {
+  width: 45%;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.close-pill-details {
+  background-color: #3B83B4;
+  color: white;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 5px;
+  float: right;
+  width:3%;
+}
+
+.close-pill-details:hover {
+  background-color: red;
+  border-color: red;
+  cursor: pointer;
+}
+
+.get-prices {
+  border-color: #3B83B4;
+  background-color: #3B83B4;
+  color: white;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 22px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  border-radius: 4px;
+  height: 35px;
+  margin: 10px;
+}
