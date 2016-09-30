@@ -59,7 +59,7 @@
       <span ng-show="showInstructions">
         Please enter either the name of the drug, or the any of the other credentials to find your pill results
       </span>
-      <img ng-show="loading" src="http://www.apps.oas.org/oasmeetings/images/loading.gif" alt="" />
+      <img ng-show="loading" src="pics\loading.gif" alt="" />
       <div class="pill-result" ng-show="showImageResults" ng-repeat="imgObj in pillImgResults track by $index">
         <span>
           <img ng-click="togglePillDetails($index)" src={{imgObj.imageUrl}} alt="" />
