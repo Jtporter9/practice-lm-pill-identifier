@@ -8,7 +8,7 @@ angular.module('app')
   }
 
   this.BuildPillIdUrl = function(quereyParams) {
-    var urlString ="http://rximage.nlm.nih.gov/api/rximage/1/rxnav?&resolution=600";
+    var urlString ="https://rximage.nlm.nih.gov/api/rximage/1/rxnav?&resolution=600";
     var url = urlString + quereyParams;
     return url;
   }
