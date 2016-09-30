@@ -3,6 +3,8 @@ angular.module('app')
 
   $scope.showImageResults = false;
   $scope.showPillDetails = false;
+  $scope.showInstructions = true;
+  $scope.loading = false;
   $scope.sizeList = [];
   $scope.scoresList = [];
   for(i = 0; i <= 100; i++){
@@ -16,11 +18,14 @@ angular.module('app')
   $scope.colorsList = PillIdService.colorsList;
 
   $scope.SubmitSearch = function(pillObj) {
+    $scope.showInstructions = false;
+    $scope.loading = true;
     var params = PillIdService.BuildQuereyParams(pillObj);
     var pillIdUrl = PillIdService.BuildPillIdUrl(params);
     var responseData = PillIdService.GetPillImage(pillIdUrl)
         .then(function(response) {
             console.log("ctrl: ", response);
+            $scope.loading = false;
             $scope.imageCount = "(" + response.replyStatus.imageCount + ")";
             $scope.pillImgResults = response.nlmRxImages;
             console.log("image count: ", $scope.imageCount);
