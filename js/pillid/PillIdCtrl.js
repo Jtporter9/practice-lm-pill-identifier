@@ -18,6 +18,7 @@ angular.module('app')
   $scope.colorsList = PillIdService.colorsList;
 
   $scope.SubmitSearch = function(pillObj) {
+    $scope.pillImgResults ={};
     $scope.showInstructions = false;
     $scope.loading = true;
     var params = PillIdService.BuildQuereyParams(pillObj);
