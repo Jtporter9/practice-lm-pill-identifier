@@ -2,7 +2,7 @@
   <div style="display:flex;justify-content:space-between;">
     <div class="pill-id">
       <p><big>Identify your pill</big></p>
-      <form action="index.html" method="post">
+      <form ng-submit="SubmitSearch(pill)" type="submit">
         <div>
           <big>Name:</big>
           <input placeholder="Drug name... " ng-model="pill.name" type="text" name="Name" value="">
@@ -50,7 +50,7 @@
               </select>
           </div>
           <button class="clear-search" ng-click="ClearSearch()" type="button">Clear</button>
-          <button class="submit-search" ng-click="SubmitSearch(pill)" type="button">Search</button>
+          <button class="submit-search" ng-click="SubmitSearch(pill)" type="submit">Search</button>
       </form>
     </div>
 
